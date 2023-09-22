@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- terminal mappings
-vim.keymap.set("n", "<C-/>", "<cmd>term<CR>")
+vim.keymap.set("n", "<C-/>", "<cmd>term<CR>i")
 vim.keymap.set('t', "<C-\\>", "<C-\\><C-n>:bd!<CR>",{silent = true})
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
