@@ -4,9 +4,9 @@ this is my init.lua for nvim. Feel free to copy and adjust, because I did the sa
 
 ### Prerequisites
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
-
-### References
 - [packer.nvim](https://github.com/wbthomason/packer.nvim#quickstart)
+
+### Packages in this nvim setup
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [Rosé Pine](https://github.com/rose-pine/neovim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
