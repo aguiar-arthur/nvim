@@ -2,8 +2,11 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- terminal mappings
-vim.keymap.set("n", "<C-/>", "<cmd>term<CR>i")
+vim.keymap.set("n", "<C-/>", "<cmd>term<CR>")
 vim.keymap.set('t', "<C-\\>", "<C-\\><C-n>:bd!<CR>",{silent = true})
+
+-- lazygit support
+vim.keymap.set("n", "<C-g>g", "<cmd>term lazygit<CR>a")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
