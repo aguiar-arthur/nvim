@@ -13,3 +13,4 @@ this is my init.lua for nvim. Feel free to copy and adjust, because I did the sa
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [undotree](https://github.com/mbbill/undotree)
 - [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
+- [telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
