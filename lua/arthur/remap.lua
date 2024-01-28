@@ -50,3 +50,12 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/arthur/packer.lua<
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+-- telescope file browser 
+vim.api.nvim_set_keymap(
+  "n",
+  "<space>fb",
+  ":Telescope file_browser<CR>",
+  { noremap = true }
+)
+
