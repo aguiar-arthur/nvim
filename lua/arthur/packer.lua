@@ -21,18 +21,14 @@ return require('packer').startup(function(use)
         end
     })
 
-    use {
-        "nvim-telescope/telescope-file-browser.nvim",
-        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-    }
-
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('nvim-tree/nvim-web-devicons')
-
+    use('lewis6991/gitsigns.nvim')
+    
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',

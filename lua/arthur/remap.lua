@@ -3,7 +3,7 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- terminal mappings
 vim.keymap.set("n", "<C-/>", "<cmd>term<CR>")
-vim.keymap.set('t', "<C-\\>", "<C-\\><C-n>:bd!<CR>",{silent = true})
+vim.keymap.set('t', "<C-\\>", "<C-\\><C-n>:bd!<CR>", { silent = true })
 
 -- lazygit support
 vim.keymap.set("n", "<C-g>g", "<cmd>term lazygit<CR>a")
@@ -21,10 +21,10 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
@@ -43,12 +43,3 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/arthur/packer.lua<
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
-
--- telescope file browser 
-vim.api.nvim_set_keymap(
-  "n",
-  "<space>fb",
-  ":Telescope file_browser<CR>",
-  { noremap = true }
-)
-
