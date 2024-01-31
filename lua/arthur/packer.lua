@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
     use('nvim-tree/nvim-web-devicons')
     use('lewis6991/gitsigns.nvim')
     use 'rmehri01/onenord.nvim'
+    use ('goolord/alpha-nvim')
 
     use {
         "nvim-neo-tree/neo-tree.nvim",
@@ -30,6 +31,7 @@ return require('packer').startup(function(use)
             "MunifTanjim/nui.nvim",
         }
     }
+
 
     use {
         'VonHeikemen/lsp-zero.nvim',
