@@ -1,5 +1,4 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
@@ -19,8 +18,11 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('nvim-tree/nvim-web-devicons')
     use('lewis6991/gitsigns.nvim')
-    use 'rmehri01/onenord.nvim'
-    use ('goolord/alpha-nvim')
+    use('rmehri01/onenord.nvim')
+    use('goolord/alpha-nvim')
+
+    use('mfussenegger/nvim-dap')
+    use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
 
     use {
         "nvim-neo-tree/neo-tree.nvim",

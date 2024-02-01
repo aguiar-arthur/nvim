@@ -1,4 +1,4 @@
-local dashboard = require("alpha.themes.dashboard")
+local dashboard = require("alpha.themes.startify")
 dashboard.section.header.val = {
     [[          ▀████▀▄▄              ▄█ ]],
     [[            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ ]],
