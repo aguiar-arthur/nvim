@@ -13,16 +13,21 @@ return require('packer').startup(function(use)
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
-    use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('nvim-tree/nvim-web-devicons')
     use('lewis6991/gitsigns.nvim')
     use('rmehri01/onenord.nvim')
     use('goolord/alpha-nvim')
-
     use('mfussenegger/nvim-dap')
+
     use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+
+    use {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        requires = { { "nvim-lua/plenary.nvim" } }
+    }
 
     use {
         "nvim-neo-tree/neo-tree.nvim",
@@ -33,7 +38,6 @@ return require('packer').startup(function(use)
             "MunifTanjim/nui.nvim",
         }
     }
-
 
     use {
         'VonHeikemen/lsp-zero.nvim',
