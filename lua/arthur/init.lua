@@ -1,3 +1,4 @@
+require("arthur.variables")
 require("arthur.remap")
-require("arthur.set")
 require("arthur.packer")
+require("arthur.set")

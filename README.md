@@ -37,15 +37,13 @@ If you haven't installed Neovim yet, you can do so using your system's package m
 sudo apt-get install neovim
 ```
 
-### Step 3: Clone the nvim Configuration
+### Step 3: nvim Configuration variables
 
-Clone the nvim configuration repository to your machine:
+Change the variables in the: 
 
 ```bash
-git clone <repository-url> ~/.config/nvim
+/Users/arthuraguiar/.config/nvim/lua/arthur/variables.lua
 ```
-
-Replace `<repository-url>` with the actual URL of the nvim configuration repository.
 
 ### Step 4: Install Plugins using packer.nvim
 

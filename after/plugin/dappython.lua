@@ -24,7 +24,7 @@ dap.adapters.python = function(cb, config)
             -- python -m venv debugpy
             -- debugpy/bin/python -m pip install debugpy
             -- ++++++++++++++++++++++++++++++++++++++++++
-            command = '/Users/arthuraguiar/virtualenvs/debugpy/bin/python',
+            command = vim.env.DEBUGGY_PY_PATH,
             args = { '-m', 'debugpy.adapter' },
             options = {
             -- ++++++++++++++++++++++++++++++++++++++++++
