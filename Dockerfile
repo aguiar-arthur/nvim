@@ -1,16 +1,16 @@
+# Use a base image with your preferred Linux distribution
 FROM ubuntu:latest
 
+# Update and install necessary packages
 RUN apt-get update && \
-    apt-get install -y neovim git openssh-server
+    apt-get install -y neovim git
 
-RUN useradd -m -s /bin/bash dockeruser && echo "dockeruser:dockerpassword" | chpasswd
-
+# Clone Packer.nvim repository
 RUN git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-RUN git clone --depth 1 https://github.com/Aguiar575/nvim /home/dockeruser/.config/nvim && \
-    chown -R dockeruser:dockeruser /home/dockeruser/.config/nvim
+# Clone your custom Neovim configuration repository
+RUN git clone --depth 1 https://github.com/Aguiar575/nvim /root/.config/nvim
 
-EXPOSE 22
-
-CMD service ssh start && nvim
+# Start a command that doesn't exit immediately
+CMD ["tail", "-f", "/dev/null"]
 
