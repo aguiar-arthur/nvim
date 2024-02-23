@@ -4,7 +4,6 @@ this is my init.lua for nvim. Feel free to copy and adjust, because I did the sa
 
 ### Packages in this nvim setup
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-<<<<<<< HEAD
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [undotree](https://github.com/mbbill/undotree)
 - [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
