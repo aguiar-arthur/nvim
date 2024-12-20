@@ -1,34 +1,101 @@
-## Arthur's nvim setup 
+Here’s a draft of your README file for your Neovim configuration, emphasizing the shortcuts:
 
-this is my init.lua for nvim. Feel free to copy and adjust, because I did the same.
+---
 
-### Packages in this nvim setup
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [undotree](https://github.com/mbbill/undotree)
-- [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
-- [Onenord](https://github.com/rmehri01/onenord.nvim)
-- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
-- [alpha-vim](https://github.com/goolord/alpha-nvim)
-- [onenord (theme)](https://github.com/rmehri01/onenord.nvim)
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [nvim-dap](https://github.com/mfussenegger/nvim-dap)
-- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
-- [harpoon2](https://github.com/ThePrimeagen/harpoon/tree/harpoon2)
+# nvim-v2 Configuration
 
-### Step 1: Install Prerequisites
+This is a cleaner and more refined Neovim configuration. It includes plugins and custom key mappings to enhance your workflow.
 
-Make sure you have the following prerequisites installed on your system:
+## Features
+- **Lazy.nvim** for efficient plugin management.
+- **LSP** support with Mason and various tools.
+- **Telescope** for powerful fuzzy finding.
+- **Tree-sitter** for syntax highlighting.
+- **Custom Key Mappings** for a streamlined experience.
 
-- [ripgrep](https://github.com/BurntSushi/ripgrep)
-- [packer.nvim](https://github.com/wbthomason/packer.nvim)
-- [lazygit](https://github.com/jesseduffield/lazygit)
-- [pyenv](https://github.com/pyenv/pyenv)
-- [llvm](https://llvm.org/)
+---
 
-### Install Fonts
+## Installation
 
-If the configuration uses a specific font (e.g., Rosé Pine), make sure to install it on your system. You can usually find font installation instructions in the respective font repository.
+1. Clone this repository.
+2. Ensure Neovim 0.8+ is installed.
+3. Install plugins with Lazy.nvim:
+   ```bash
+   nvim +Lazy! sync
+   ```
 
-### References
-[llvm](https://embeddedartistry.com/blog/2017/02/24/installing-llvm-clang-on-osx/)
+---
+
+## Key Mappings
+
+### General
+- `<Esc>`: Clear search highlighting.
+
+### Visual Mode
+- `J`: Move selected lines **down**.
+- `K`: Move selected lines **up**.
+- `<leader>p`: Paste without overwriting the unnamed register.
+
+### Normal Mode
+- `J`: Join lines, cursor restored.
+- `<C-d>`: Scroll half-page down (centered).
+- `<C-u>`: Scroll half-page up (centered).
+- `<leader>x`: Make the current file executable.
+- `<leader>s`: Search and replace the current word.
+
+### Clipboard Operations
+- `<leader>y`: Yank to the system clipboard.
+- `<leader>d`: Delete without yanking.
+
+### Diagnostics
+- `[d`: Go to the previous diagnostic.
+- `]d`: Go to the next diagnostic.
+- `<leader>e`: Show diagnostic error messages.
+- `<leader>q`: Open the diagnostic quickfix list.
+
+### Quickfix List Navigation
+- `<C-k>`: Next item in the quickfix list (centered).
+- `<C-j>`: Previous item in the quickfix list (centered).
+
+### Telescope
+- `<leader>sh`: Search help tags.
+- `<leader>sk`: Search keymaps.
+- `<leader>sf`: Search files.
+- `<leader>ss`: Search Telescope features.
+- `<leader>sw`: Search current word.
+- `<leader>sg`: Search by grep.
+- `<leader>sd`: Search diagnostics.
+- `<leader>sr`: Resume previous search.
+- `<leader>s.`: Search recent files.
+- `<leader><leader>`: Switch buffers.
+- `<leader>/`: Fuzzy search in the current buffer.
+- `<leader>s/`: Live grep in open files.
+- `<leader>sn`: Search Neovim configuration files.
+
+### File Browser
+- `<space>fb`: Open the Telescope file browser.
+
+---
+
+## Plugins
+
+This configuration uses the following plugins:
+- **catppuccin/nvim**: Beautiful color scheme.
+- **nvim-telescope/telescope.nvim**: Fuzzy finder with extensions.
+- **nvim-lualine/lualine.nvim**: Status line with Catppuccin theme.
+- **nvim-treesitter**: Enhanced syntax highlighting.
+- **tpope/vim-fugitive**: Git integration.
+- **lewis6991/gitsigns.nvim**: Git signs in the gutter.
+- **hrsh7th/nvim-cmp**: Autocompletion framework.
+- **saadparwaiz1/cmp_luasnip**: Snippet completion.
+- **numToStr/Comment.nvim**: Easy commenting.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Let me know if you'd like to adjust or add more details!
